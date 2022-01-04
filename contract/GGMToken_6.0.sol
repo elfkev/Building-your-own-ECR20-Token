@@ -1,11 +1,11 @@
 pragma solidity 0.6.6;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// 'Miner NFT' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
+// Deployed to : 0xAd0116D45C392E6947a2FCfE8eb0e1d0131C9c3D
+// Symbol      : MNFT
+// Name        : Miner NFT
 // Total supply: 100000000
 // Decimals    : 18
 //
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "CCM";
-        name = "CCMToken";
+        symbol = "MNFT";
+        name = "Miner NFT";
         decimals = 0;
         _totalSupply = 100000000;
-        balances[0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58] = _totalSupply;
-        emit Transfer(address(0), 0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58, _totalSupply);
+        balances[0xAd0116D45C392E6947a2FCfE8eb0e1d0131C9c3D] = _totalSupply;
+        emit Transfer(address(0), 0xAd0116D45C392E6947a2FCfE8eb0e1d0131C9c3D, _totalSupply);
     }
 
 
